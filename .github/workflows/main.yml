@@ -10,7 +10,7 @@ env:
   IMAGE_SHA: ${{ secrets.DOCKERHUB_USERNAME }}/holiday-service:${{ github.sha }}
   IMAGE_LATEST: ${{ secrets.DOCKERHUB_USERNAME }}/holiday-service:latest
   GITOPS_REPO: Tracel-web-project/Travel-gitOps
-  GITOPS_DEPLOYMENT_PATH: base/holiday-service
+  GITOPS_DEPLOYMENT_PATH: apps/dev/holidays
   GITOPS_BRANCH_PREFIX: ci/update-holiday-service
 
 jobs:
