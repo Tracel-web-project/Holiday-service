@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: db-config
 data:
-  MONGO_URL: "mongodb://mongo-service:27017/holidays"
+  MONGO_URL: "mongodb://holiday-db:27017/holidays"
   MYSQL_DB: "travel"
