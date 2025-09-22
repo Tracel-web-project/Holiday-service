@@ -15,6 +15,9 @@ spec:
         - podSelector:
             matchLabels:
               app: travel-frontend
+        - namespaceSelector:
+            matchLabels:
+              name: ingress-nginx
       ports:
         - protocol: TCP
           port: 5002
