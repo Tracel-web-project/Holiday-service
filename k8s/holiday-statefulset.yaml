@@ -30,4 +30,4 @@ spec:
       volumes:
         - name: mongo-data
           persistentVolumeClaim:
-            claimName: mongo-db-holiday
+            claimName: mongo-data-holiday-db
