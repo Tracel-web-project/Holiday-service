@@ -14,9 +14,10 @@ spec:
         - podSelector:
             matchLabels:
               app: holidays-service
-     - namespaceSelector:
-          matchLabels:
-            name: default          
+        - namespaceSelector:
+            matchLabels:
+              name: default
       ports:
         - protocol: TCP
           port: 27017
+
