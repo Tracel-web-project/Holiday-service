@@ -80,9 +80,9 @@ jobs:
             ${{ env.IMAGE_LATEST }}
 
       - name: Scan Docker Image with Trivy
-        uses: aquasecurity/trivy-action@v0.33.1
+        uses: aquasecurity/trivy-action@v0.32.0
         with:
-          image-ref: ${{ env.SHA_TAG }}
+          image-ref: ${{ env.IMAGE_SHA }}
           format: table
           severity: HIGH,CRITICAL
           exit-code: 0 
